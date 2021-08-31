@@ -5,15 +5,14 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vmax;
+  width: 100vw;
   height: 100vh;
   background-color: #ff4c4b;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .container {
-  width: 60%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -40,8 +39,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 30%;
-  min-height: 30%;
+  width: 10em;
+  height: 10em;
   background-color: #ffca28;
   margin: 0 15px 0 0;
 }
@@ -55,10 +54,24 @@ body {
   border-radius: 50%;
   border: 28px solid #ff4c4b;
 }
-
-@media only screen and (max-width: 200px) {
+@media all and (max-width: 670px) {
   .container .container-main {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+  }
+  .container .container-main .square {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .container .container-main {
+    width: 500px;
+    height: 500px;
+  }
+  .container .container-main .square {
+    width: 8rem;
+    height: 8rem;
   }
 }
