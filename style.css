@@ -10,6 +10,7 @@ body {
   background-color: #ff4c4b;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .container {
   width: 100%;
