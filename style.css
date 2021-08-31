@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 100vmax;
   height: 100vh;
   background-color: #ff4c4b;
   display: flex;
