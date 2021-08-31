@@ -59,8 +59,8 @@ body {
 }
 @media all and (max-width: 600px) {
   .container .container-main {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
   .container .container-main .square {
     width: 5rem;
