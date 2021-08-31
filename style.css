@@ -35,19 +35,21 @@ body {
   flex-direction: column;
 }
 .container .container-main .container-square {
+  width: 100%;
+  height: 32%;
   display: flex;
   justify-content: space-between;
 }
 
-.container .container-main .square {
+.container .container-main .container-square .square {
+  width: 32%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 11em;
-  height: 11em;
   background-color: #ffca28;
 }
-.container .container-main .square span {
+.container .container-main .container-square .square span {
   font-size: 10em;
   color: #ff4c4b;
 }
@@ -62,19 +64,11 @@ body {
     width: 300px;
     height: 300px;
   }
-  .container .container-main .square {
-    width: 90px;
-    height: 90px;
-  }
 }
 
 @media all and (max-width: 1000px) {
   .container .container-main {
-    width: 450px;
-    height: 450px;
-  }
-  .container .container-main .square {
-    width: 140px;
-    height: 140px;
+    width: 500px;
+    height: 500px;
   }
 }
