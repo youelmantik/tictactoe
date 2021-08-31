@@ -63,8 +63,8 @@ body {
     height: 300px;
   }
   .container .container-main .square {
-    width: 4rem;
-    height: 4rem;
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -74,7 +74,7 @@ body {
     height: 450px;
   }
   .container .container-main .square {
-    width: 9rem;
-    height: 9rem;
+    width: 140px;
+    height: 140px;
   }
 }
