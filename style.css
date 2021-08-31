@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vmax;
+  height: 100vh;
+  background-color: #ff4c4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.container .container-header {
+  color: #ffca28;
+  font-family: "lemon", sans-serif;
+  font-size: 1.5em;
+}
+.container .container-main {
+  margin-top: 1rem;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .container-main .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30%;
+  min-height: 30%;
+  background-color: #ffca28;
+  margin: 0 15px 0 0;
+}
+.container .container-main .square span {
+  font-size: 10em;
+  color: #ff4c4b;
+}
+.circle {
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 28px solid #ff4c4b;
+}
+
+@media only screen and (max-width: 200px) {
+  .container .container-main {
+    width: 300px;
+    height: 300px;
+  }
+}
