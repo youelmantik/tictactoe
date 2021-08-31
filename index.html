@@ -5,49 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <div class="container">
       <div class="container-header">
-        <h2><span></span>Play</h2>
+        <h2><span id="play">O</span> Play</h2>
       </div>
       <div class="container-main">
         <div class="container-square">
-          <div class="square">
+          <div class="square" id="1">
             <span class=""></span>
           </div>
-          <div class="square">
+          <div class="square" id="2">
             <span class=""></span>
           </div>
-          <div class="square">
-            <span class=""></span>
-          </div>
-        </div>
-        <div class="container-square">
-          <div class="square">
-            <span class=""></span>
-          </div>
-          <div class="square">
-            <span class=""></span>
-          </div>
-          <div class="square">
+          <div class="square" id="3">
             <span class=""></span>
           </div>
         </div>
         <div class="container-square">
-          <div class="square">
+          <div class="square" id="4">
             <span class=""></span>
           </div>
-          <div class="square">
+          <div class="square" id="5">
             <span class=""></span>
           </div>
-          <div class="square">
+          <div class="square" id="6">
+            <span class=""></span>
+          </div>
+        </div>
+        <div class="container-square">
+          <div class="square" id="7">
+            <span class=""></span>
+          </div>
+          <div class="square" id="8">
+            <span class=""></span>
+          </div>
+          <div class="square" id="9">
             <span class=""></span>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Message -->
+    <div class="container-message">
+      <div class="message">
+        <div class="message-header">
+          <h1></h1>
+        </div>
+        <button id="play-again" onclick="reset()">Play again</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
