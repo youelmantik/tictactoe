@@ -25,7 +25,7 @@ body {
 .container .container-header {
   color: #ffca28;
   font-family: "lemon", sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .container .container-main {
   margin-top: 1rem;
@@ -72,13 +72,13 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  animation: all 1s;
 }
 .container-message.active {
   display: flex;
 }
 
 .container-message .message {
+  min-width: 300px;
   background-color: white;
   padding: 2rem;
   text-align: center;

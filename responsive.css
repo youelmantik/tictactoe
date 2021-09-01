@@ -1,4 +1,7 @@
 @media all and (max-width: 600px) {
+  .container .container-header {
+    font-size: 2em !important;
+  }
   .container .container-main {
     width: 300px !important;
     height: 300px !important;
@@ -28,5 +31,8 @@
   .container .container-main {
     width: 500px;
     height: 500px;
+  }
+  .container .container-header {
+    font-size: 3em;
   }
 }

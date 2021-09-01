@@ -7,6 +7,7 @@ const tictactoes = [
   [1, 5, 9],
   [2, 5, 8],
   [3, 6, 9],
+  [3, 5, 7],
   [4, 5, 6],
   [7, 8, 9],
 ];
@@ -24,6 +25,10 @@ $(".square").click(function () {
     x.push(Number(this.id));
   }
   isTicTacToe(sign);
+  console.log(count);
+  if (count === 9) {
+    messageAlert("draw");
+  }
   sign = sign === "circle" ? "fa fa-times" : "circle";
 });
 
@@ -58,6 +63,9 @@ function isTicTacToe(sign) {
 function messageAlert(message, value = "") {
   if (message == "won") {
     $(".message-header").children().text(`Playar ${value} won`);
+    $(".container-message").toggleClass("active");
+  } else if (message == "draw") {
+    $(".message-header").children().text("DRAW");
     $(".container-message").toggleClass("active");
   }
 }
