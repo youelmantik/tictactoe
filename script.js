@@ -24,15 +24,13 @@ $(".square").click(function () {
   } else if (sign == "fa fa-times") {
     x.push(Number(this.id));
   }
-  isTicTacToe(sign);
-  console.log(count);
-  if (count === 9) {
-    messageAlert("draw");
-  }
+  isTicTacToe(sign, count);
   sign = sign === "circle" ? "fa fa-times" : "circle";
 });
 
-function isTicTacToe(sign) {
+function isTicTacToe(sign, count) {
+  let draw = false;
+  let won = false;
   if (sign == "circle") {
     tictactoes.forEach((tictactoe) => {
       let same = 0;
@@ -41,10 +39,11 @@ function isTicTacToe(sign) {
           same++;
         }
       }
-      if (same == 3) {
-        messageAlert("won", "O");
-      }
+      if (same == 3) won = true;
+      if (count == 9 && !won) draw = true;
     });
+    if (won) messageAlert("won", "O");
+    else if (draw) messageAlert("draw");
   } else if (sign == "fa fa-times") {
     tictactoes.forEach((tictactoe) => {
       let same = 0;
@@ -53,10 +52,11 @@ function isTicTacToe(sign) {
           same++;
         }
       }
-      if (same == 3) {
-        messageAlert("won", "X");
-      }
+      if (same == 3) won = true;
+      if (count == 9 && !won) draw = true;
     });
+    if (won) messageAlert("won", "X");
+    else if (draw) messageAlert("draw");
   }
 }
 
